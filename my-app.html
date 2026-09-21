@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žiedai – Gėlės kiekvienai progai</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8fa;
+            color: #3d2930;
+        }
+
+        header {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            background: #fff;
+            border-bottom: 1px solid #f3dce2;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 30px;
+            color: #a94f69;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #49353c;
+        }
+
+        nav a:hover {
+            color: #c85d7c;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            padding: 60px 8%;
+            background: linear-gradient(90deg, #fff1f4, #f9dce4);
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-family: Georgia, serif;
+            font-size: 64px;
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .hero-text h1 span {
+            color: #c85d7c;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background: #c85d7c;
+            color: white;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #a94f69;
+        }
+
+        .flower-image {
+            width: 50%;
+            text-align: center;
+            font-size: 180px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 8%;
+            background: white;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            margin-bottom: 5px;
+        }
+
+        .bouquets {
+            padding: 60px 8%;
+        }
+
+        .bouquets h2 {
+            font-family: Georgia, serif;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(150, 70, 90, 0.1);
+        }
+
+        .card-image {
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f6dfe5;
+            font-size: 90px;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #c85d7c;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 30px;
+            text-align: center;
+            background: #f4d7df;
+            color: #5a3b44;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌸 Žiedai</div>
+
+    <nav>
+        <a href="#">Pradžia</a>
+        <a href="#">Puokštės</a>
+        <a href="#">Apie mus</a>
+        <a href="#">Kontaktai</a>
+    </nav>
+
+    <div>🛒</div>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+        <p style="color:#c85d7c; letter-spacing:4px;">
+            GĖLĖS KIEKVIENAI PROGAI
+        </p>
+
+        <h1>
+            Daugiau nei gėlės –
+            <span>daugiau jausmų</span>
+        </h1>
+
+        <p>
+            Šviežios gėlės, kurios sukuria ypatingas akimirkas.
+            Nustebinkite artimuosius ir padovanokite šypseną.
+        </p>
+
+        <a class="button" href="#">
+            Rinktis puokštę →
+        </a>
+    </div>
+
+    <div class="flower-image">
+        🌷🌸🌹
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <div class="feature">
+        <div class="feature-icon">🌿</div>
+        <h3>Šviežios gėlės</h3>
+        <p>Tiesiai iš augintojų</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🚚</div>
+        <h3>Greitas pristatymas</h3>
+        <p>Visoje Lietuvoje</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">♡</div>
+        <h3>Kiekvienai progai</h3>
+        <p>Meilei, šventei, dovanai</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🎁</div>
+        <h3>Gražus įpakavimas</h3>
+        <p>Su meile detalėms</p>
+    </div>
+
+</section>
+
+
+<section class="bouquets">
+
+    <h2>Populiariausios puokštės</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-image">🌹🌸</div>
+            <div class="card-content">
+                <h3>Rožinis rytas</h3>
+                <p>Rožės, gipsofilės ir žaluma</p>
+                <br>
+                <span class="price">35 €</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">🌷🌷</div>
+            <div class="card-content">
+                <h3>Pavasario švelnumas</h3>
+                <p>Švelniai rožiniai ir balti žiedai</p>
+                <br>
+                <span class="price">29 €</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">🌸🌺</div>
+            <div class="card-content">
+                <h3>Meilės puokštė</h3>
+                <p>Romantiška rožių kompozicija</p>
+                <br>
+                <span class="price">45 €</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">💐🌹</div>
+            <div class="card-content">
+                <h3>Švelni dovana</h3>
+                <p>Elegantiška puokštė ypatingai progai</p>
+                <br>
+                <span class="price">39 €</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 Žiedai · Gėlės su meile 🌸
+</footer>
+
+</body>
+</html>
